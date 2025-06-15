@@ -1,0 +1,161 @@
+/* CSS Variables */
+:root {
+    --font-inter: 'Inter', sans-serif;
+    --font-great: 'Great Vibes', cursive;
+    --primary-color: rgba(230, 83, 60, 1);
+    --secondary-color: rgba(255, 255, 255, 0.5);
+    --border-color: rgba(253, 253, 253, 0.20);
+}
+
+/* Shared Styles */
+body {
+    margin: 0;
+    font-family: var(--font-inter);
+}
+.display-flex {
+    display: flex;
+}
+.btn{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    border: none;
+}
+.brand-image-btn{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    background-color: rgba(119, 119, 119, 0.6);
+    height: 100px;
+    width: 200px;
+    border: none;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Styles */
+header {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 1) 0%,
+        rgba(48, 48, 48, 0.99) 50%,
+        rgba(17, 17, 17, 1) 100%
+    );
+}
+nav,
+.brand {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Nav Styles */
+.logo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--primary-color);
+}
+nav {
+    justify-content: space-between;
+}
+nav i{
+    display: none;
+}
+.navbar {
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0px;
+    height: 30px;
+}
+.nav-item {
+    list-style: none;
+    margin: 10px 10px;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+.navbar li:first-child {
+    margin-left: 0;
+}
+.navbar li:first-child a {
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+/* Brand Styles */
+.brand-detail{
+    margin-right: 1rem;
+}
+.brand-title {
+    font-size: 5rem;
+    color: white;
+}
+.brand-title-cursive {
+    font-family: var(--font-great);
+}
+.brand-description{
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+.btn-download{
+    margin-left: 1rem;
+    border: 1px solid var(--border-color);
+    background: transparent;
+}
+.brand-images{
+    text-align: center;
+}
+.brand-image-title{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 900;
+}
+.brand-image-subtitle{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+}
+.brand-btn-1{
+    translate: 150px -450px;
+}
+.brand-btn-2{
+    translate: 0px -270px;
+}
+.brand-btn-2 i{
+    color: white;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    margin-right: 0.75rem;
+    border-radius: 50px;
+}
+
+/* Main Styles */
+
+/* Footer Styles */
+
+/* Mobile View */
+@media screen and (max-width: 576px) {
+    nav,
+    .brand{
+        margin: 0px 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    nav i{
+        display: inline;
+        color: white;
+        margin: 50px;
+    }
+    .brand{
+        flex-direction: column;
+    }
+}
