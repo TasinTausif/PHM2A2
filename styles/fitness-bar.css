@@ -43,6 +43,12 @@ body {
     font-weight: 900;
     color: white;
 }
+.section-subtitle{
+    font-size: 1.75rem;
+    margin-bottom: 0px;
+    font-weight: 900;
+    color: white;
+}
 .section-text{
     font-size: 1rem;
     font-weight: 400;
@@ -307,6 +313,50 @@ section{
 .team-card-6{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2)),url('/images/trainer6.png');
 }
+/* BMI Calculator Section Style */
+.bmi-calculator{
+    margin: 0px;
+}
+.bmi-calculator > h3,
+.bmi-calculator > p{
+    margin-left: 600px;
+}
+.bmi{
+    margin-top: 5rem;
+    width: 1200px;
+    padding: 0px 400px;
+    background-color: rgba(34, 34, 34, 1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-bottom: 40px;
+}
+.bmi-table{
+    margin-top: 3.5rem;
+    border: 1px solid var(--secondary-color);
+    border-collapse: collapse;
+    height: 250px;
+}
+.bmi-table td{
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+}
+.bmi-calculator-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin: 2rem 0rem;
+}
+#activity{
+    grid-column: span 2;
+}
+.bmi-calculator-form input,
+.bmi-calculator-form select{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 10px;
+}
 
 /* Footer Styles */
 
@@ -367,9 +417,18 @@ section{
     }
     .team-container{
         grid-template-columns: repeat(1, 1fr);
-        margin: 30px;
+        margin: 20px;
     }
     .team-card{
         height: 400px;
+    }
+    .bmi-calculator > h3,
+    .bmi-calculator > p{
+    margin-left: 20px;
+}
+    .bmi{
+        grid-template-columns: repeat(1, 1fr);
+        width: 500px;
+        padding: 0px 30px;
     }
 }
